@@ -1,4 +1,4 @@
-##BackgroundSession test steps
+## BackgroundSession test steps
 ```
 - (void)testDonwloadInbackground {
     NSLog(@"%s %@", __FUNCTION__, [[UIPasteboard generalPasteboard] string]);
@@ -16,11 +16,12 @@
 }
 ```
 
-* run test case
-* kill app
-###the following method calls
-* - (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler
-*- (void)URLSession:(NSURLSession *)session
+1 run test case
+2 kill app
+
+### the following method calls
+* \- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler
+* \- (void)URLSession:(NSURLSession *)session
               task:(NSURLSessionTask *)task
 didCompleteWithError:(NSError *)error
-*- (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession *)session
+* \- (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession *)session
