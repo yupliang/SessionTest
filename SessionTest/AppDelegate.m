@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MySessionDelegate.h"
 
 @interface AppDelegate ()
 
@@ -40,12 +41,21 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    NSLog(@"%s", __FUNCTION__);
+    [[UIPasteboard generalPasteboard] setString:@""];
 }
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
+- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler {
+    NSLog(@"%s", __FUNCTION__);
+    [[UIPasteboard generalPasteboard] setString:identifier];
+    NSURLSessionConfiguration *backgroundConfiguration = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:identifier];
+    MySessionDelegate *sessionDelegate = [[MySessionDelegate alloc] init];
+    sessionDelegate.storeHandler = completionHandler;
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:backgroundConfiguration delegate:sessionDelegate delegateQueue:[NSOperationQueue mainQueue]];
+}
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD028B891FB06573008AED84 /* MySessionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD028B881FB06573008AED84 /* MySessionDelegate.m */; };
 		FDE4F0D81FADB5D4000F1C88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE4F0D71FADB5D4000F1C88 /* AppDelegate.m */; };
 		FDE4F0DB1FADB5D4000F1C88 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE4F0DA1FADB5D4000F1C88 /* ViewController.m */; };
 		FDE4F0DE1FADB5D4000F1C88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE4F0DC1FADB5D4000F1C88 /* Main.storyboard */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD028B871FB06573008AED84 /* MySessionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySessionDelegate.h; sourceTree = "<group>"; };
+		FD028B881FB06573008AED84 /* MySessionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySessionDelegate.m; sourceTree = "<group>"; };
 		FDE4F0D31FADB5D4000F1C88 /* SessionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SessionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE4F0D61FADB5D4000F1C88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FDE4F0D71FADB5D4000F1C88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				FDE4F0D71FADB5D4000F1C88 /* AppDelegate.m */,
 				FDE4F0D91FADB5D4000F1C88 /* ViewController.h */,
 				FDE4F0DA1FADB5D4000F1C88 /* ViewController.m */,
+				FD028B871FB06573008AED84 /* MySessionDelegate.h */,
+				FD028B881FB06573008AED84 /* MySessionDelegate.m */,
 				FDE4F0DC1FADB5D4000F1C88 /* Main.storyboard */,
 				FDE4F0DF1FADB5D4000F1C88 /* Assets.xcassets */,
 				FDE4F0E11FADB5D4000F1C88 /* LaunchScreen.storyboard */,
@@ -208,6 +213,7 @@
 				FDE4F0DB1FADB5D4000F1C88 /* ViewController.m in Sources */,
 				FDE4F0E61FADB5D4000F1C88 /* main.m in Sources */,
 				FDE4F0D81FADB5D4000F1C88 /* AppDelegate.m in Sources */,
+				FD028B891FB06573008AED84 /* MySessionDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
